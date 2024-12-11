@@ -13,19 +13,21 @@
       <h1 class="header__title">Quiz-App</h1>
     </header>
     <main>
-      <form class="card-list">
-        <fieldset class="card-list__item">
-          <label for="question">Your Question:</label>
-          <input type="text" id="question" />
-        </fieldset>
-        <fieldset class="card-list__item">
-          <label for="answer">Your Answer:</label>
-          <input type="text" id="answer" />
-        </fieldset>
-        <fieldset class="card-list__item">
-          <label for="tag">Tag:</label>
-          <input type="text" id="tag" />
-        </fieldset>
+      <form class="form">
+        <!-- Question -->
+        <label for="question">Your Question:</label>
+        <textarea
+          id="question"
+          placeholder="Write your question here"
+        ></textarea>
+        <!-- Answer -->
+        <label for="answer">Your Answer:</label>
+        <textarea id="answer" placeholder="Write your answer here"></textarea>
+        <!-- Tag -->
+        <label for="tag">Tag:</label>
+        <input type="text" id="tag" />
+        <!-- Submit -->
+        <button type="submit" class="submit-button">Submit</button>
       </form>
     </main>
     <nav class="navigation">
