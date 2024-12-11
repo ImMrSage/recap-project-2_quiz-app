@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -74,7 +75,8 @@
 
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__list-item">
+        <!-- Home -->
+        <li class="navigation__list-item navigation__list-item--active">
           <a
             class="navigation__link"
             href="index.html"
@@ -92,6 +94,7 @@
             </svg>
           </a>
         </li>
+        <!-- Bookmarks -->
         <li class="navigation__list-item">
           <a
             class="navigation__link"
@@ -110,7 +113,32 @@
             </svg>
           </a>
         </li>
-        <li class="navigation__list-item navigation__list-item--active">
+        <!-- Add Card -->
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="form.html"
+            aria-label="go to add new cards page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-plus"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+          </a>
+        </li>
+        <!-- Profile -->
+        <li class="navigation__list-item">
           <a
             class="navigation__link"
             href="profile.html"
