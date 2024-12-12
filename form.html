@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="index.js" defer></script>
+    <script src="form.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -15,20 +15,28 @@
     <main>
       <form class="form">
         <!-- Question -->
-        <label for="question">Your Question:</label>
+        <label for="-input-question">Your Question:</label>
         <textarea
-          id="question"
+          id="input-question"
+          data-js="input-question"
           placeholder="Write your question here"
         ></textarea>
         <!-- Answer -->
-        <label for="answer">Your Answer:</label>
-        <textarea id="answer" placeholder="Write your answer here"></textarea>
+        <label for="input-answer">Your Answer:</label>
+        <textarea
+          id="input-answer"
+          data-js="input-answer"
+          placeholder="Write your answer here"
+        ></textarea>
         <!-- Tag -->
-        <label for="tag">Tag:</label>
-        <input type="text" id="tag" />
+        <label for="input-tag">Tag:</label>
+        <input type="text" id="input-tag" data-js="input-tag" />
         <!-- Submit -->
-        <button type="submit" class="submit-button">Submit</button>
+        <button type="button" class="submit-button" data-js="submit-button">
+          Submit
+        </button>
       </form>
+      <ul class="card-list" data-js="card-list"></ul>
     </main>
     <nav class="navigation">
       <ul class="navigation__list">
