@@ -16,18 +16,34 @@
   padding: 1rem;
 }
 
+.submit-button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
 .form-card-list {
   padding: 2rem 2rem 4rem 2rem;
   max-width: 25rem;
   margin: 0 auto;
 }
 
-.form-card-list__item {
+.form-new-card {
   margin: 0 0 4rem;
 }
 
-.form-card__article {
+.form-card-content {
   border: 1px solid var(--black);
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+}
+
+.form-card-question {
+  margin: 0 0 2rem;
+}
+
+.form-card-tag {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0 5px;
 }

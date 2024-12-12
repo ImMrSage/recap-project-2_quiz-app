@@ -18,6 +18,12 @@ function createCard(newCardData) {
   cardContainer.append(newCard);
   newCard.append(cardContent);
   cardContent.append(cardQuestion, cardAnswer, cardTag);
+
+  //add classes and attributes
+  newCard.classList.add("form-new-card");
+  cardContent.classList.add("form-card-content");
+  cardQuestion.classList.add("form-card-question");
+  cardTag.classList.add("form-card-tag");
   //give values
   cardQuestion.textContent = newCardData.question;
   cardAnswer.textContent = newCardData.answer;
