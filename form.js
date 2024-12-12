@@ -3,7 +3,7 @@ const formElement = document.querySelector('[data-js="form-element"]');
 const questionInput = document.querySelector('[data-js="input-question"]');
 const answerInput = document.querySelector('[data-js="input-answer"]');
 const tagInput = document.querySelector('[data-js="input-tag"]');
-
+//Card
 const cardContainer = document.querySelector('[data-js="form-card-list"]');
 
 function createCard(newCardData) {
@@ -39,4 +39,24 @@ formElement.addEventListener("submit", (event) => {
   createCard(data);
 
   console.log("Form submitted!");
+});
+
+//Text Counter
+const maxLengthQuestion = questionInput.getAttribute("maxlength");
+const maxLengthAnswer = answerInput.getAttribute("maxlength");
+const textCounterQuestion = document.querySelector(
+  '[data-js="text-counter-question"]'
+);
+const textCounterAnswer = document.querySelector(
+  '[data-js="text-counter-answer"]'
+);
+
+questionInput.addEventListener("input", () => {
+  const remainingText = maxLengthQuestion - questionInput.value.length;
+  textCounterQuestion.textContent = `${remainingText} characters left.`;
+});
+
+answerInput.addEventListener("input", () => {
+  const remainingText = maxLengthAnswer - answerInput.value.length;
+  textCounterAnswer.textContent = `${remainingText} characters left.`;
 });

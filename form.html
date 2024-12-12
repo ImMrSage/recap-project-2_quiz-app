@@ -20,19 +20,35 @@
           id="input-question"
           data-js="input-question"
           name="question"
+          class="text-area"
+          maxlength="150"
           placeholder="Write your question here"
         ></textarea>
+        <span data-js="text-counter-question" class="text-counter"
+          >150 characters left</span
+        >
         <!-- Answer -->
         <label for="input-answer">Your Answer:</label>
         <textarea
           id="input-answer"
           data-js="input-answer"
+          class="text-area"
           name="answer"
+          maxlength="150"
           placeholder="Write your answer here"
         ></textarea>
+        <span data-js="text-counter-answer" class="text-counter"
+          >150 characters left</span
+        >
         <!-- Tag -->
         <label for="input-tag">Tag:</label>
-        <input type="text" id="input-tag" name="tag" data-js="input-tag" />
+        <input
+          type="text"
+          id="input-tag"
+          name="tag"
+          data-js="input-tag"
+          maxlength="50"
+        />
         <!-- Submit -->
         <button type="submit" class="submit-button">Submit</button>
       </form>
